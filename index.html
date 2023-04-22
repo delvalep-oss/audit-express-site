@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr" data-leads-api-origin="http://localhost:3000" data-product-slug="audit-express-site">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Express - Révélez le potentiel caché de votre site web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Audit Express de Site Web</h1>
+            <p class="tagline">Découvrez pourquoi votre site web ne génère pas de clients</p>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Votre site web est-il à la hauteur de votre expertise?</h2>
+                <p>En tant qu'indépendant, votre site web devrait être votre meilleur commercial. Pourtant, de nombreux sites créés il y a quelques années ne répondent plus aux standards actuels et perdent des clients chaque jour.</p>
+                <div class="cta-primary">
+                    <a href="#audit-tool" id="cta-primary" class="btn btn-primary">Tester mon site gratuitement</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Analyse de site web">
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits">
+        <div class="container">
+            <h2>Pourquoi faire auditer votre site web?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔍</div>
+                    <h3>Identifiez les problèmes techniques</h3>
+                    <p>Vitesse de chargement, compatibilité mobile, problèmes SEO qui vous font perdre en visibilité.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📈</div>
+                    <h3>Augmentez votre taux de conversion</h3>
+                    <p>Découvrez pourquoi vos visiteurs ne deviennent pas des clients et comment y remédier.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏆</div>
+                    <h3>Dépassez vos concurrents</h3>
+                    <p>Obtenez des recommandations concrètes pour vous démarquer dans votre secteur.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Rentabilisez votre investissement</h3>
+                    <p>Transformez votre site en véritable outil de génération de business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="audit-tool">
+        <div class="container">
+            <h2>Testez votre site en 30 secondes</h2>
+            <p>Notre outil d'analyse préliminaire vous donne un premier aperçu des problèmes potentiels de votre site.</p>
+            
+            <div class="tool-container">
+                <div class="tool-input">
+                    <label for="website-url">Entrez l'URL de votre site web:</label>
+                    <div class="url-input-group">
+                        <input type="url" id="website-url" placeholder="www.votre-site.fr" required>
+                        <button id="analyze-btn" class="btn btn-secondary">Analyser</button>
+                    </div>
+                </div>
+                <div id="analysis-results" class="hidden">
+                    <h3>Résultats préliminaires</h3>
+                    <div class="result-item">
+                        <div class="result-label">Vitesse de chargement</div>
+                        <div class="result-bar">
+                            <div class="result-progress" id="speed-score"></div>
+                        </div>
+                        <div class="result-score" id="speed-score-text"></div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-label">Compatibilité mobile</div>
+                        <div class="result-bar">
+                            <div class="result-progress" id="mobile-score"></div>
+                        </div>
+                        <div class="result-score" id="mobile-score-text"></div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-label">Optimisation SEO</div>
+                        <div class="result-bar">
+                            <div class="result-progress" id="seo-score"></div>
+                        </div>
+                        <div class="result-score" id="seo-score-text"></div>
+                    </div>
+                    <div class="result-summary" id="result-summary"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="container">
+            <h2>Obtenez votre audit complet</h2>
+            <p class="section-intro">Après votre test préliminaire, recevez une analyse détaillée et des recommandations personnalisées</p>
+            
+            <div class="pricing-card">
+                <h3>Audit Express</h3>
+                <div class="price">97€</div>
+                <ul class="features">
+                    <li>✅ Analyse technique complète</li>
+                    <li>✅ Rapport détaillé de 5-7 pages</li>
+                    <li>✅ 10 recommandations prioritaires</li>
+                    <li>✅ Comparaison avec vos concurrents</li>
+                    <li>✅ Livraison sous 72h</li>
+                </ul>
+                <div class="early-access">
+                    <p>Early Bird: 20% de réduction pour les 10 premiers clients</p>
+                </div>
+                <a href="#lead-capture" class="btn btn-primary">Réserver mon audit</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="lead-capture">
+        <div class="container">
+            <h2>Réservez votre Audit Express</h2>
+            <p>Complétez le formulaire ci-dessous pour réserver votre audit et bénéficier du tarif Early Bird</p>
+            
+            <form id="lead-form" class="lead-form">
+                <div class="form-group">
+                    <label for="name">Votre nom</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Votre email professionnel</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="website">URL de votre site web</label>
+                    <input type="url" id="website" name="website" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Réserver mon audit à -20%</button>
+                <div id="lead-form-status"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Audit Express - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>
